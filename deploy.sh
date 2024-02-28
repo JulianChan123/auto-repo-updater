@@ -13,6 +13,7 @@ systemctl stop nginx;
 echo -e "\n[nginx is now off]";
 killall ngrok;
 echo -e "\n[ngrok is now off]";
+cd ..;
 git pull;
 echo -e "\n[start nginx ]\n";
 systemctl start nginx;
