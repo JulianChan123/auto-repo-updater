@@ -12,10 +12,11 @@ echo -e "\n[nginx is now off]\n";
 killall ngrok;
 echo -e "[ngrok is now off] \n";
 cd ..;
+printf "Repository: ";
 sudo git pull;
 echo -e "\n[start nginx ]\n";
 systemctl start nginx;
-echo -e "\n[nginx is now on]";
-read -n 1 -s -r -p "Press any key to continue to ngrok"
+echo -e "\n[nginx is now on]\n";
+read -n 1 -s -r -p "Press any key to continue to ngrok..."
 ngrok http 80
 

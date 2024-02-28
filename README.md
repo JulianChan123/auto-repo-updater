@@ -17,3 +17,7 @@ A bash script that automates:
 
 > [!IMPORTANT]  
 > You need to have installed ngrok and nginx
+
+### Demo
+
+![alt text](./Images/DemoImage.jpeg)
