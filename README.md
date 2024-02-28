@@ -1,2 +1,6 @@
 # auto-app-updater
-An bash script that automates an app update and reset ngrok
+A bash script that automates:
+-stop ngrok and nginx services
+-clone a github repo
+-start ngrok and nginx services
+-Open ngrok url in browser
