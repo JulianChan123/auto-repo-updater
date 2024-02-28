@@ -5,16 +5,14 @@ echo '  _____          __          ____ ___               __
 /    |    \  |  /|  | (  <_> )    |  / |  |_> > __ \|  | \  ___/|  | \/
 \____|__  /____/ |__|  \____/|______/  |   __(____  /__|  \___  >__|   
         \/                             |__|       \/          \/            
-
-
 '
-echo -e "\n[stop nginx ]\n";
+echo -e "\n\n[stop nginx ]\n";
 systemctl stop nginx;
-echo -e "\n[nginx is now off]";
+echo -e "\n[nginx is now off]\n";
 killall ngrok;
-echo -e "\n[ngrok is now off]";
+echo -e "[ngrok is now off]";
 cd ..;
-git pull;
+sudo git pull;
 echo -e "\n[start nginx ]\n";
 systemctl start nginx;
 echo -e "\n[nginx is now on]";
